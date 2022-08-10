@@ -1,0 +1,40 @@
+name: terraform apply
+
+on:
+  workflow_call: 
+    inputs: 
+      working_dir:
+        required: true
+        type: string
+    secrets:      
+      ARM_CLIENT_ID: 
+        required: true
+      ARM_CLIENT_SECRET: 
+        required: true
+      TENANT_ID: 
+        required: true
+
+env:
+  ARM_CLIENT_ID: ${{secrets.ARM_CLIENT_ID}}
+  ARM_CLIENT_SECRET: ${{secrets.ARM_CLIENT_SECRET}}
+  ARM_TENANT_ID: ${{secrets.TENANT_ID}}
+
+
+jobs:
+  apply:
+    name: terraform apply
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1.3.2
+      - name: terraform init
+        working-directory: ${{inputs.working_dir}}
+        run: terraform init
+      - name: terraform fmt
+        working-directory: ${{inputs.working_dir}}
+        run: terraform fmt
+      - name: terraform apply
+        working-directory: ${{inputs.working_dir}}
+        run: terraform apply -auto-approve

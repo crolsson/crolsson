@@ -1,0 +1,20 @@
+name: dev-pull-request
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - platform/dev/**
+      - modules/**
+  workflow_dispatch: {}
+
+jobs:
+  plan:
+    name: terraform plan dev
+    uses: ./.github/workflows/pullrequest-terraform-plan.yml
+    with: 
+      working_dir: platform/dev
+    secrets:
+      ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+      TENANT_ID: ${{ secrets.TENANT_ID }}

@@ -3,6 +3,10 @@
 - Github/Github actions/Github advanced security
 - Azure Devops/ Azure Pipelines
 - Jira, Confluence, Atlassian-produkter
+- Appstore/Apple developer program
+- Google Play Console
+- Microsoft App Center
+- Flutter
 - Slack
 - Digdir, Altinn, Felleskomponenter
 - Team City, Octopus Deploy

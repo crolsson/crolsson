@@ -13,4 +13,4 @@
 - TFS 
 - Utviklingsguiden, kjøreregler for produktutvikling
  
- mailto:robert@miljodir.no
+E-post: robert<at>miljodir.no

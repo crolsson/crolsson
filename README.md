@@ -8,7 +8,7 @@
 - Microsoft App Center
 - Flutter
 - Slack
-- Digdir, Altinn, Felleskomponenter
+- Digdir, Altinn, felleskomponenter, nasjonale fellesløsninger
 - Team City, Octopus Deploy
 - TFS 
 - Utviklingsguiden, kjøreregler for produktutvikling

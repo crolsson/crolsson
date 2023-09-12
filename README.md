@@ -1,12 +1,13 @@
 # Hei
 <b>Jeg er forvalter/kontaktperson for følgende: </b>
+- MAP (Miljødirektoratets applikasjonsplattform) -produkteier
 - Github/Github actions/Github advanced security
 - Azure Devops/ Azure Pipelines
 - Jira, Confluence, Atlassian-produkter
 - Appstore/Apple developer program
 - Google Play Console
 - Microsoft App Center
-- Flutter
+- (Flutter)
 - Slack
 - Digdir, Altinn, felleskomponenter, nasjonale fellesløsninger
 - Team City, Octopus Deploy
